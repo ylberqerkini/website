@@ -6,6 +6,28 @@
     font-size: 1rem;
     margin-top: 0.5rem;
 }
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
 #services {
     margin: 3rem auto;
     max-width: 900px;
@@ -76,7 +98,7 @@
     color: #3a8cae;
 }
 body {
-    background: linear-gradient(135deg, #071e25 15%, #2a6985 70%);
+    background: linear-gradient(135deg, #272e30 15%, #2a6985 70%);
     color: #fff;
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
@@ -109,20 +131,26 @@ nav a {
 nav a:hover {
     color: #ffd700;
 }
+.h2head {
+    text-align: center;
+    color: #1b5366;
+    margin: 10px 0;
+    font-size: 24px;
+}
 
 #hero {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 60vh;
-    background: rgba(255,255,255,0.05);
+    background: rgba(0, 0, 0, 0.05);
     text-align: center;
 }
 .hero-content {
     max-width: 500px;
     margin: 2rem auto;
     padding: 2rem;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.15);
 }
@@ -139,8 +167,8 @@ nav a:hover {
         width: 200px;
         height: 200px;
         border-radius: 16%;
-        transition: transform 0.3s;
-        transform: scale(1.2);
+        transform: scale(1);
+        transition: 50ms;
    
 
    
