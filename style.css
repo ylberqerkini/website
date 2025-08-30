@@ -1,0 +1,297 @@
+.request-form input[type="file"] {
+    background: #f5f5f5;
+    color: #1b5366;
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+#services {
+    margin: 3rem auto;
+    max-width: 900px;
+    padding: 2rem;
+    background: rgba(0,0,0,0.12);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.services-list h3 {
+    color: #ffd700;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.services-list ul {
+    list-style: disc inside;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    color: #fff;
+}
+.services-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+#request {
+    margin-top: 2rem;
+}
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(255,255,255,0.07);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    max-width: 500px;
+    margin: 0 auto;
+}
+.request-form label {
+    font-weight: 500;
+    color: #ffd700;
+}
+.request-form input,
+.request-form select,
+.request-form textarea {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    background: #f5f5f5;
+    color: #1b5366;
+}
+.request-form textarea {
+    resize: vertical;
+}
+.request-form button {
+    background: #ffd700;
+    color: #1b5366;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.2s, color 0.2s;
+}
+.request-form button:hover {
+    background: #fff;
+    color: #3a8cae;
+}
+body {
+    background: linear-gradient(135deg, #071e25 15%, #2a6985 70%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgba(0,0,0,0.3);
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: rgba(255,255,255,0.05);
+    text-align: center;
+}
+.hero-content {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #ffd700;
+}
+.profile-img:hover {
+     border: 4px solid #ffffff;
+        width: 200px;
+        height: 200px;
+        border-radius: 16%;
+        transition: transform 0.3s;
+        transform: scale(1.2);
+   
+
+   
+}
+.cta-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background: #ffd700;
+    color: #1b5366;
+    font-weight: bold;
+    border-radius: 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+    background: #fff;
+    color: #0091ff ;;
+    border-radius: 24px;
+    border: 3px solid #0091ff ;
+}
+
+section {
+    margin: 3rem auto;
+    max-width: 800px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    scroll-margin-top: 80px;
+}
+h2 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+.skills-list li {
+    background: #3a8cae;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+.project-card {
+    background: #fff;
+    color: #1b5366;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    transition: transform 0.2s;
+}
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+#contact a {
+    color: #ffd700;
+    text-decoration: underline;
+}
+.project-card1 {
+    background: #ffffff;
+    color: #1b5366;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    transition: transform 0.2s;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #ffd700;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.review-card {
+    background: #fff;
+    color: #1b5366;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #ffd700;
+}
+.review-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.review-name {
+    font-weight: bold;
+    color: #3a8cae;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #1b5366;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 100;
+        padding: 1rem 0;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav {
+        position: relative;
+    }
+}

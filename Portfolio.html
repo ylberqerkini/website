@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#request">Design Service</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+    // Responsive menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+    </script>
+    <section id="hero">
+        <div class="hero-content">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGeSgVVD6S3ew/profile-displayphoto-shrink_200_200/B4DZXXvpZUG8Ac-/0/1743081347166?e=2147483647&v=beta&t=4UQbjIJrdvi2KR3LbcAuE-gOL92V_MJmqt0zmejSk_4" alt="Ylber Qerkini" class="profile-img">
+            <h1>Welcome to My Portfolio</h1>
+            <p></p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Ylber Qerkini, I’m a graphic designer with a passion for t-shirt design 🎨. I also work as a web developer and enjoy bringing creative ideas to life online. Outside of design, I love playing pikado 🎯, going hiking, and exploring new challenges.
+
+I’m the co-founder of PixelonStudio, 28nentori.com, and Bora, where creativity and innovation meet.Experienced in HTML, CSS, JavaScript and modern web technologies. I love building beautiful, functional websites and learning new skills.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Logo Design</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+            
+                <img src="saray.png" style="width:100%;height:auto;">
+            </a>
+            
+        </a>
+        <h3>Project One</h3>
+        <p>Logo Design</p>
+    </div>
+    <div class="project-card1">
+        <img src="madcat.png" style="width:100%;height:auto;">
+        <h3>Project Two</h3>
+        <p>A logo Design for a company Madcat</p>
+    </div>
+    <div class="project-card">
+        <img src="Emerald.png" style="width:100%;height:auto;">
+        <h3>Project Three</h3>
+            <p>A logo Design for a company Emerald.</p>
+            </div>
+        </div>
+    </section>
+    <section id="request">
+        <h2>Request a Task or Design Service</h2>
+        <form class="request-form" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="service">Service Type:</label>
+            <select id="service" name="service" required>
+                <option value="task">Task</option>
+                <option value="logo">Logo Design</option>
+                <option value="branding">Brand & Identity Design</option>
+                <option value="web">Digital & Web Design</option>
+                <option value="print">Print & Packaging Design</option>
+                <option value="merch">Merchandise & Apparel Design</option>
+                <option value="marketing">Advertising & Marketing Design</option>
+                <option value="illustration">Illustration & Artwork</option>
+                <option value="motion">Motion & Multimedia Design</option>
+                <option value="product">Product & 3D Design</option>
+                <option value="special">Specialized Requests</option>
+            </select>
+
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <label for="brief">Upload Brief/Example (PDF, JPG, PNG):</label>
+            <input type="file" id="brief" name="brief" accept=".pdf,.jpg,.jpeg,.png">
+
+            <button type="submit">Send Request</button>
+        </form>
+    </section>
+    <section id="reviews">
+        <h2>Client Reviews</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Anonymous Avatar" class="review-avatar">
+                <p class="review-text">"Amazing work! Fast delivery and great communication. Highly recommend for any design project."</p>
+                <span class="review-name">Anonymous</span>
+            </div>
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Anonymous Avatar" class="review-avatar">
+                <p class="review-text">"Creative, professional, and very easy to work with. The logo exceeded my expectations!"</p>
+                <span class="review-name">Anonymous</span>
+            </div>
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Anonymous Avatar" class="review-avatar">
+                <p class="review-text">"Great experience from start to finish. Will definitely come back for more design services."</p>
+                <span class="review-name">Anonymous</span>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:ylberqerkini@email.com">ylberqerkini@email.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/ylberqerkini</a></p>
+    </section>
+</body>
+</html>
