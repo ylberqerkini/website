@@ -34,6 +34,10 @@ body{
   filter:contrast(1.05) saturate(1.15) brightness(0.7);
   object-fit:cover;
 }
+.linkstyle:hover {
+    color:orange
+    
+}
 .bg-overlay{
   position:absolute;inset:0;
   background:linear-gradient(180deg, rgba(14,28,42,0.35), rgba(10,24,40,0.6));
@@ -244,3 +248,33 @@ body{
 
 /* utility */
 .muted-small{color:rgba(255,255,255,0.7);font-size:.9rem}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-media {
+  width: 100%;
+  max-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.project-media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-media img {
+  transform: scale(1.05);
+}
