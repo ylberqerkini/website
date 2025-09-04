@@ -1,0 +1,25 @@
+{
+  "name": "professional-web-project",
+  "version": "1.0.0",
+  "description": "A professional and clean web project featuring animations and a visually appealing layout.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "web",
+    "project",
+    "professional",
+    "animations",
+    "responsive"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
