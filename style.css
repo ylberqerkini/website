@@ -52,7 +52,7 @@ body{
 .site-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-bottom:1px solid rgba(255,255,255,0.04)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;max-width:1200px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--muted)}
-.brand-avatar{width:44px;height:44px;border-radius:10px;border:2px solid rgba(255,255,255,0.08);object-fit:cover}
+.brand-avatar{width:44px;height:44px;border-radius:10px;border:2px solid rgba(255, 255, 255, 0.08);object-fit:cover}
 .brand-name{font-weight:700;font-family:Poppins, Inter;font-size:1rem;color:#fff}
 
 /* nav */
@@ -90,7 +90,7 @@ body{
 /* profile visual */
 .profile-visual{display:flex;justify-content:center}
 .profile-card{width:320px;text-align:center;padding:2rem;border-radius:16px}
-.profile-img{width:120px;height:120px;border-radius:999px;object-fit:cover;border:4px solid rgba(255,255,255,0.08)}
+.profile-img{width:120px;height:120px;border-radius:999px;object-fit:cover;border:4px solid rgba(255, 255, 255, 0.08)}
 .role{color:rgba(255,255,255,0.8)}
 
 /* about grid */
@@ -278,3 +278,26 @@ body{
 .project-card:hover .project-media img {
   transform: scale(1.05);
 }
+.btn-cv {
+  display: inline-block;
+  padding: 0.75rem 1.4rem;
+  background: linear-gradient(90deg, #5ef4b6, #8ee3ff);
+  color: #111;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-cv:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.brand-avatar:hover{
+  border: 2px solid white;
+}
+.profile-img:hover{
+  border: 4px solid white;
+  transition: border 0.3s ease;}
+  
