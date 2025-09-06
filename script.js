@@ -11,7 +11,7 @@
   });
 
   // === Scroll Progress Bar ===
-  const progressBar = document.getElementById('myBar') || document.getElementById('progress');
+  const progressBar = document.getElementById('progress');
   window.addEventListener('scroll', () => {
     const h = document.documentElement;
     const scrollTop = h.scrollTop || document.body.scrollTop;
@@ -72,21 +72,6 @@
       overlay && (overlay.style.opacity = '0.95');
     });
   }
-
-  // === Video Toggle Button ===
-  const video = document.getElementById('myVideo');
-  const btn = document.getElementById('myBtn');
-  function toggleVideoPlayback() {
-    if (!video || !btn) return;
-    if (video.paused) {
-      video.play();
-      btn.innerHTML = "Pause";
-    } else {
-      video.pause();
-      btn.innerHTML = "Play";
-    }
-  }
-  btn && btn.addEventListener('click', toggleVideoPlayback);
 
   // === Request Form Submit Feedback ===
   const form = document.getElementById('request-form');
@@ -195,5 +180,14 @@
 
     update();
     startTimer();
+  })();
+
+  // Logo Carousel Loop
+  (function initLogoCarousel() {
+    const track = document.querySelector('.logo-carousel .carousel-track');
+    if (!track) return;
+    const items = Array.from(track.children);
+    const clonedItems = items.map(item => item.cloneNode(true));
+    clonedItems.forEach(clone => track.appendChild(clone));
   })();
 })();

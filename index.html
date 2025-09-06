@@ -3,28 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ylber Qerkini — Designer & Front‑end</title>
+  <title>Ylber Qerkini — Designer </title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
-
-  <!-- small inline script to avoid FOUC for theme if needed -->
+  
   <script>document.documentElement.classList.remove('no-js');</script>
 </head>
-<body class="no-js">
+<body>
 
-  <!-- background video (place assets/bg.mp4 or update src) -->
-  <div class="bg-wrap" aria-hidden="true">
-    <video class="bg-video" autoplay muted loop playsinline>
-      <source src="assets/bg.mp4" type="video/mp4">
-      <!-- fallback image -->
-    </video>
-    <div class="bg-overlay"></div>
-  </div>
+  
 
-  <!-- top progress / thin header -->
   <div class="progress-container"><div id="progress" class="progress-bar"></div></div>
 
   <header class="site-header">
@@ -38,12 +27,9 @@
         <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span><span></span>
         </button>
-
         <ul id="main-nav" class="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#request">Request</a></li>
           <li><a href="#request">Contact</a></li>
         </ul>
       </nav>
@@ -54,26 +40,15 @@
     <section id="hero" class="hero section">
       <div class="container hero-grid">
         <div class="hero-card glass">
-          <h1 class="title">Graphic Designer </h1>
-          <p class="subtitle"><span id="typewriter">A designer and web developer with experience in graphic design, branding, and 
-e-commerce solutions. Skilled in t-shirt design and building responsive 
-websites, including Shopify store configuration. Experienced with AI tools for 
-content creation, design ideation, and workflow optimization. Recognized for 
-creative problem-solving and delivering high-quality results on time.</span></p>
-
+          <h1 class="title">Graphic Designer</h1>
+          <p class="subtitle">
+            <span id="typewriter">A designer and web developer with experience in graphic design, branding, and e-commerce solutions. Skilled in t-shirt design and building responsive websites, including Shopify store configuration. Experienced with AI tools for content creation, design ideation, and workflow optimization. Recognized for creative problem-solving and delivering high-quality results on time.</span>
+          </p>
           <div class="hero-actions">
             <a href="#projects" class="btn primary">View Work</a>
             <a href="#request" class="btn ghost">Request a Project</a>
-            <!-- CV Button -->
-<a href="/Ylber-CV.pdf" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="btn-cv">
-  View My CV
-</a>
-
+            <a href="Ylber-CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-cv">View My CV</a>
           </div>
-
           <div class="hero-stats">
             <div class="stat">
               <strong>8+</strong>
@@ -89,15 +64,14 @@ creative problem-solving and delivering high-quality results on time.</span></p>
             </div>
           </div>
         </div>
-
         <div class="profile-visual">
           <div class="glass profile-card tilt" data-tilt>
             <img class="profile-img" src="https://media.licdn.com/dms/image/v2/D4D03AQGeSgVVD6S3ew/profile-displayphoto-shrink_200_200/B4DZXXvpZUG8Ac-/0/1743081347166?e=2147483647&v=beta&t=4UQbjIJrdvi2KR3LbcAuE-gOL92V_MJmqt0zmejSk_4" alt="Ylber Qerkini">
             <h3>Ylber Qerkini</h3>
-            <p class="role">Graphic Designer </p>
+            <p class="role">Graphic Designer</p>
             <div class="socials">
-              <a class="linkstyle" style="color: #fff;" href="https://www.linkedin.com/in/ylber-qerkini-ab2809136" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="linkstyle" style="color: #fff; " href="https://www.behance.net/pixelon" target="_blank" rel="noopener">Behance</a>
+              <a class="linkstyle" href="https://www.linkedin.com/in/ylber-qerkini-ab2809136" target="_blank" rel="noopener">LinkedIn</a>
+              <a class="linkstyle" href="https://www.behance.net/pixelon" target="_blank" rel="noopener">Behance</a>
             </div>
           </div>
         </div>
@@ -105,199 +79,128 @@ creative problem-solving and delivering high-quality results on time.</span></p>
     </section>
 
     <section id="about" class="section">
-        <div class="container">
-    
-
-          
-                <div class="glass skills-card reveal">
-                    <h3>Skills</h3>
-                    <ul class="skills-list">
-                      <li>Logo Design</li>
-                      <li>Brand Design</li>
-                      <li>T-shirt Design</li>
-                      <li>Package Design</li>
-                      <li>Social Media Design</li>
-                      <li>Web Design</li>
-                      <li>HTML / CSS</li>
-                      <li>Domain Setup & Hosting Integration</li>
-                      <li>Google Analytics</li>
-                      <li>Shopify Store Configuration</li>
-                    </ul>
-                </div>
-                <br><br>
-
-                <div class="glass language-card reveal">
-                    <h3>Language</h3>
-                    <ul class="language-list">
-                        <li>Albanian</li>
-                        <li>English</li>
-                        <li>German</li>
-                    </ul>
-                </div>
-                <br><br>
-
-                <div class="glass tools-card reveal">
-                    <h3>Design Tools</h3>
-                    <ul class="tools-list">
-                      <li>Illustrator</li>
-                      <li>Photoshop</li>
-                      <li>InDesign</li>
-                        <li>Figma</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container about-grid">
+        <div class="glass skills-card reveal">
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li>Logo Design</li>
+            <li>Brand Design</li>
+            <li>T-shirt Design</li>
+            <li>Package Design</li>
+            <li>Social Media Design</li>
+            <li>Web Design</li>
+            <li>HTML / CSS</li>
+            <li>Domain Setup & Hosting Integration</li>
+            <li>Google Analytics</li>
+            <li>Shopify Store Configuration</li>
+          </ul>
         </div>
-        <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #111;
-      font-family: sans-serif;
-    }
-
-    .carousel {
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      background: #222;
-      padding: 20px 0;
-    }
-
-    .carousel-track {
-      display: flex;
-      width: calc(250px * 10); /* Adjust based on number of logos */
-      animation: scroll 30s linear infinite;
-    }
-
-    .carousel-item {
-      flex: 0 0 250px;
-      margin: 0 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      border-radius: 8px;
-      height: 100px;
-    }
-
-    .carousel-item img {
-      max-width: 80%;
-      max-height: 80%;
-      object-fit: contain;
-    }
-
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  </style>
-</head>
-<body>
-
-  <div class="carousel">
-    <div class="carousel-track">
-      <!-- Repeat logos to create seamless loop -->
-      <div class="carousel-item"><img src="saray.png" alt="Logo 1"></div>
-      <div class="carousel-item"><img src="madcat.png" alt="Logo 2"></div>
-      <div class="carousel-item"><img src="Emerald.png" alt="Logo 3"></div>
-      <div class="carousel-item"><img src="logo4.png" alt="Logo 4"></div>
-      <div class="carousel-item"><img src="logo5.png" alt="Logo 5"></div>
-      <!-- Duplicate for seamless loop -->
-      <div class="carousel-item"><img src="logo1.png" alt="Logo 1"></div>
-      <div class="carousel-item"><img src="logo2.png" alt="Logo 2"></div>
-      <div class="carousel-item"><img src="logo3.png" alt="Logo 3"></div>
-      <div class="carousel-item"><img src="logo4.png" alt="Logo 4"></div>
-      <div class="carousel-item"><img src="logo5.png" alt="Logo 5"></div>
-    </div>
-  </div>
-
-
+        <div class="glass language-card reveal">
+          <h3>Languages</h3>
+          <ul class="language-list">
+            <li>Albanian</li>
+            <li>English</li>
+            <li>German</li>
+          </ul>
+        </div>
+        <div class="glass tools-card reveal">
+          <h3>Design Tools</h3>
+          <ul class="tools-list">
+            <li>Illustrator</li>
+            <li>Photoshop</li>
+            <li>InDesign</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="section">
-  <div class="container">
-    <h2>Selected Projects</h2>
-    <div class="projects-grid">
-      <article class="project-card glass tilt reveal" data-tilt>
-        <div class="project-media">
-          <img src="saray.png" alt="Saray Logo">
-        </div>
-        <h3>Project One</h3>
-        <p class="muted">Logo & Visual identity</p>
-        <a class="project-link" href="#">Case study →</a>
-      </article>
-
-      <article class="project-card glass tilt reveal" data-tilt>
-        <div class="project-media">
-          <img src="madcat.png" alt="Madcat Logo">
-        </div>
-        <h3>Madcat</h3>
-        <p class="muted">Branding / Apparel</p>
-        <a class="project-link" href="#">Case study →</a>
-      </article>
-
-      <article class="project-card glass tilt reveal" data-tilt>
-        <div class="project-media">
-          <img src="Emerald.png" alt="Emerald Logo">
-        </div>
-        <h3>Emerald</h3>
-        <p class="muted">Identity System</p>
-        <a class="project-link" href="#">Case study →</a>
-      </article>
+    <div class="logo-carousel">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="C:\Users\ylber\Ylber Qerkini\website\professional-web-project\src\assets\Logo\Emerald.png" alt="Saray"></div>
+        <div class="carousel-item"><img src="madcat.png" alt="Madcat"></div>
+        <div class="carousel-item"><img src="Emerald.png" alt="Emerald"></div>
+        <div class="carousel-item"><img src="logo4.png" alt="Logo 4"></div>
+        <div class="carousel-item"><img src="logo5.png" alt="Logo 5"></div>
+      </div>
     </div>
-  </div>
-</section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card glass tilt reveal" data-tilt>
+            <div class="project-media">
+              <img src="saray.png" alt="Saray Logo">
+            </div>
+            <h3>Project One</h3>
+            <p class="muted">Logo & Visual identity</p>
+            <a class="project-link" href="#">Case study →</a>
+          </article>
+          <article class="project-card glass tilt reveal" data-tilt>
+            <div class="project-media">
+              <img src="madcat.png" alt="Madcat Logo">
+            </div>
+            <h3>Madcat</h3>
+            <p class="muted">Branding / Apparel</p>
+            <a class="project-link" href="#">Case study →</a>
+          </article>
+          <article class="project-card glass tilt reveal" data-tilt>
+            <div class="project-media">
+              <img src="Emerald.png" alt="Emerald Logo">
+            </div>
+            <h3>Emerald</h3>
+            <p class="muted">Identity System</p>
+            <a class="project-link" href="#">Case study →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section id="request" class="section">
       <div class="container">
         <h2>Request Design Service</h2>
-
         <form id="request-form" class="request-form glass" enctype="multipart/form-data" novalidate>
           <div class="form-grid">
             <label>
               <span>Name</span>
               <input type="text" id="name" name="name" required>
             </label>
-
             <label>
               <span>Email</span>
               <input type="email" id="email" name="email" required>
             </label>
-
             <label>
-                <span class="form-label">Service</span>
-                <select id="service" name="service" required class="form-select">
-                    <option value="" disabled selected>Select a service</option>
-                    <option style="color: rgb(33, 33, 33);" value="logo-design">Logo Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="tshirt-apparel">T-Shirt / Apparel</option>
-                    <option style="color: rgb(33, 33, 33);"value="branding">Branding</option>
-                    <option style="color: rgb(33, 33, 33);"value="ui-website">UI / Website</option>
-                    <option style="color: rgb(33, 33, 33);"value="illustration">Illustration</option>
-                    <option style="color: rgb(33, 33, 33);"value="figma">Figma</option>
-                    <option style="color: rgb(33, 33, 33);"value="html-css">HTML / CSS</option>
-                    <option style="color: rgb(33, 33, 33);"value="javascript">JavaScript</option>
-                    <option style="color: rgb(33, 33, 33);"value="brand-design">Brand Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="tshirt-design">T-shirt Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="package-design">Package Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="social-media-design">Social Media Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="domain-hosting">Domain Setup & Hosting Integration</option>
-                    <option style="color: rgb(33, 33, 33);"value="web-design">Web Design</option>
-                    <option style="color: rgb(33, 33, 33);"value="google-analytics">Google Analytics</option>
-                    <option style="color: rgb(33, 33, 33);"value="shopify-store">Shopify Store Configuration</option>
-                </select>
+              <span class="form-label">Service</span>
+              <select id="service" name="service" required class="form-select">
+                <option value="" disabled selected>Select a service</option>
+                <option value="logo-design">Logo Design</option>
+                <option value="tshirt-apparel">T-Shirt / Apparel</option>
+                <option value="branding">Branding</option>
+                <option value="ui-website">UI / Website</option>
+                <option value="illustration">Illustration</option>
+                <option value="figma">Figma</option>
+                <option value="html-css">HTML / CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="brand-design">Brand Design</option>
+                <option value="tshirt-design">T-shirt Design</option>
+                <option value="package-design">Package Design</option>
+                <option value="social-media-design">Social Media Design</option>
+                <option value="domain-hosting">Domain Setup & Hosting Integration</option>
+                <option value="web-design">Web Design</option>
+                <option value="google-analytics">Google Analytics</option>
+                <option value="shopify-store">Shopify Store Configuration</option>
+              </select>
             </label>
-
             <label class="full">
               <span>Project brief</span>
               <textarea id="details" name="details" rows="5" required></textarea>
             </label>
-
             <label class="full">
               <span>Attach file (optional)</span>
               <input type="file" id="brief" name="brief" accept=".pdf,.jpg,.jpeg,.png">
             </label>
           </div>
-
           <div class="form-actions">
             <button type="submit" class="btn primary">Send Request</button>
             <button type="reset" class="btn ghost">Reset</button>
@@ -307,355 +210,86 @@ creative problem-solving and delivering high-quality results on time.</span></p>
     </section>
 
     <section id="reviews" class="section">
-        <div class="container">
-            <h2>Testimonials</h2>
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card">
-                            <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=12" alt="Maria Costa">
-                            <div class="testimonial-content">
-                                <strong>Maria Costa</strong>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                                <p>“Ylber's work transformed our brand identity. The results are stunning and strategically strong.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=5" alt="Daniel Roe">
-                            <div class="testimonial-content">
-                                <strong>Daniel Roe</strong>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                                <p>“Fast, thoughtful, and delivered high-quality assets on a tight deadline.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=15" alt="Aisha Khan">
-                            <div class="testimonial-content">
-                                <strong>Aisha Khan</strong>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                                <p>“Exceptional typography and color systems — Ylber elevated our entire design language.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=20" alt="Marco Silva">
-                            <div class="testimonial-content">
-                                <strong>Marco Silva</strong>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                                <p>“Turned a rough brief into a market-ready identity with beautiful mockups.”</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <img class="testimonial-avatar" src="https://i.pravatar.cc/120?img=32" alt="Lena Park">
-                            <div class="testimonial-content">
-                                <strong>Lena Park</strong>
-                                <div class="stars">
-                                    ★★★★★
-                                </div>
-                                <p>“High-fidelity prototypes that matched production — saved us weeks of work.”</p>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container testimonials-slider">
+        <h2>Testimonials</h2>
+        <div class="slides">
+          <div class="slide">
+            <div class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="https://i.pravatar.cc/120?img=12" alt="Maria Costa">
+                <div class="review-meta">
+                  <strong>Maria Costa</strong>
+                  <span class="review-role">Marketing Manager</span>
                 </div>
-                <button class="carousel-control prev" aria-label="Previous">&#10094;</button>
-                <button class="carousel-control next" aria-label="Next">&#10095;</button>
+              </div>
+              <p>“Ylber's work transformed our brand identity. The results are stunning and strategically strong.”</p>
             </div>
+          </div>
+          <div class="slide">
+            <div class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="https://i.pravatar.cc/120?img=5" alt="Daniel Roe">
+                <div class="review-meta">
+                  <strong>Daniel Roe</strong>
+                  <span class="review-role">Startup Founder</span>
+                </div>
+              </div>
+              <p>“Fast, thoughtful, and delivered high-quality assets on a tight deadline.”</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="https://i.pravatar.cc/120?img=15" alt="Aisha Khan">
+                <div class="review-meta">
+                  <strong>Aisha Khan</strong>
+                  <span class="review-role">Creative Director</span>
+                </div>
+              </div>
+              <p>“Exceptional typography and color systems — Ylber elevated our entire design language.”</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="https://i.pravatar.cc/120?img=20" alt="Marco Silva">
+                <div class="review-meta">
+                  <strong>Marco Silva</strong>
+                  <span class="review-role">E-commerce Owner</span>
+                </div>
+              </div>
+              <p>“Turned a rough brief into a market-ready identity with beautiful mockups.”</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="review-card">
+              <div class="review-top">
+                <img class="review-avatar" src="https://i.pravatar.cc/120?img=32" alt="Lena Park">
+                <div class="review-meta">
+                  <strong>Lena Park</strong>
+                  <span class="review-role">Lead Product Designer</span>
+                </div>
+              </div>
+              <p>“High-fidelity prototypes that matched production — saved us weeks of work.”</p>
+            </div>
+          </div>
         </div>
+        <button class="slider-btn prev" aria-label="Previous Testimonial">&#10094;</button>
+        <button class="slider-btn next" aria-label="Next Testimonial">&#10095;</button>
+        <div class="dots" aria-label="Testimonial navigation dots"></div>
+      </div>
     </section>
-
-    <style>
-    .carousel {
-        position: relative;
-        max-width: 600px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-    .carousel-inner {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
-    .carousel-item {
-        min-width: 100%;
-        text-align: center;
-    }
-    .carousel-item.active {
-        display: block;
-    }
-    .testimonial-card {
-        color: #000; /* Ensure text is black for contrast */
-        padding: 1.5rem;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .testimonial-card {
-        padding: 1.5rem;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .testimonial-avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-    }
-    .testimonial-content strong {
-        display: block;
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
-    .stars {
-        color: #FFD700;
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
-    .carousel-control {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        font-size: 2rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .carousel-control.prev {
-        left: 10px;
-    }
-    .carousel-control.next {
-        right: 10px;
-    }
-    </style>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const carousel = document.querySelector('.carousel-inner');
-        const items = Array.from(carousel.children);
-        const prevBtn = document.querySelector('.carousel-control.prev');
-        const nextBtn = document.querySelector('.carousel-control.next');
-        let currentIndex = 0;
-
-        function updateCarousel() {
-            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-            items.forEach((item, index) => {
-                item.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            updateCarousel();
-        });
-
-        updateCarousel();
-    });
-    </script>
-        
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const track = document.querySelector('.carousel-track');
-        const cards = Array.from(track.children);
-        const prevBtn = document.querySelector('.carousel-btn.prev');
-        const nextBtn = document.querySelector('.carousel-btn.next');
-        const dotsNav = document.querySelector('.carousel-dots');
-        let currentIndex = 0;
-
-        function updateCarousel(index) {
-            cards.forEach((card, i) => {
-                card.classList.toggle('active', i === index);
-            });
-            Array.from(dotsNav.children).forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        function createDots() {
-            dotsNav.innerHTML = '';
-            cards.forEach((_, i) => {
-                const dot = document.createElement('button');
-                dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-                dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
-                dot.addEventListener('click', () => {
-                    currentIndex = i;
-                    updateCarousel(currentIndex);
-                });
-                dotsNav.appendChild(dot);
-            });
-        }
-
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            updateCarousel(currentIndex);
-        });
-
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateCarousel(currentIndex);
-        });
-
-        createDots();
-        updateCarousel(currentIndex);
-
-        // Optional: swipe support for mobile
-        let startX = null;
-        track.addEventListener('touchstart', e => {
-            startX = e.touches[0].clientX;
-        });
-        track.addEventListener('touchend', e => {
-            if (startX === null) return;
-            let endX = e.changedTouches[0].clientX;
-            if (endX - startX > 50) {
-                prevBtn.click();
-            } else if (startX - endX > 50) {
-                nextBtn.click();
-            }
-            startX = null;
-        });
-    });
-    </script>
-    <style>
-    .testimonials-carousel {
-        position: relative;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-        overflow: hidden;
-    }
-    .carousel-track {
-        display: flex;
-        transition: transform 0.4s cubic-bezier(.4,0,.2,1);
-    }
-    .carousel-card {
-        min-width: 100%;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.4s;
-        display: none;
-    }
-    .carousel-card.active {
-        opacity: 1;
-        pointer-events: auto;
-        display: block;
-    }
-    .carousel-btn {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #fff;
-        color: #222;
-        border: none;
-        font-size: 2rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        cursor: pointer;
-        z-index: 2;
-        transition: background 0.2s;
-    }
-    .carousel-btn.prev { left: 0.5rem; }
-    .carousel-btn.next { right: 0.5rem; }
-    .carousel-btn:focus { outline: 2px solid #222; }
-    .carousel-dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 1rem;
-        gap: 0.5rem;
-    }
-    .carousel-dot {
-        width: 0.8rem;
-        height: 0.8rem;
-        border-radius: 50%;
-        border: none;
-        background: #ccc;
-        cursor: pointer;
-        transition: background 0.2s;
-    }
-    .carousel-dot.active {
-        background: #222;
-    }
-    .review-card {
-        background: transparent;
-        padding: 1.5rem;
-        border-radius: 1rem;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-        text-align: left;
-    }
-    .review-top {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    .review-avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        margin-right: 1rem;
-        object-fit: cover;
-    }
-    .review-meta strong {
-        display: block;
-        font-weight: 600;
-    }
-    .review-role {
-        font-size: 0.95em;
-        color: #666;
-    }
-    @media (max-width: 600px) {
-        .testimonials-carousel {
-            max-width: 100%;
-            padding: 1rem 0.5rem;
-        }
-        .review-card {
-            padding: 1rem;
-        }
-        .carousel-btn {
-            font-size: 1.5rem;
-            width: 2rem;
-            height: 2rem;
-        }
-        .review-avatar {
-            width: 40px;
-            height: 40px;
-            margin-right: 0.7rem;
-        }
-    }
-    </style>
-  <div class="container">
-    
-
-    
   </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
-  <footer style="align-items: center;!important" class="site-footer">
-    <div style="align-items: center;" class="container">
-      <small style="text-align: center;">© <span id="year"></span> Ylber Qerkini — Designed with care</small>
-      <br>
-      <br>
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Ylber Qerkini — Designed with care</small>
     </div>
   </footer>
 
